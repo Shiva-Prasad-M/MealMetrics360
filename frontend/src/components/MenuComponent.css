@@ -1,0 +1,61 @@
+/* Basic styling for menu container */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .main-heading {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Section heading styling */
+  .section-heading {
+    font-size: 2em;
+    margin: 20px 0;
+    color: #555;
+    text-align: center;
+  }
+  
+  /* Item cards container */
+  .item-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Item card styling */
+  .item-card {
+    /* background-color: #fff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Hover effect for item cards */
+  .item-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .item-card {
+      width: 45%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .item-card {
+      width: 100%;
+    }
+  }
+  

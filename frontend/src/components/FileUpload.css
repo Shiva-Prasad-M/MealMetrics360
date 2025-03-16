@@ -1,0 +1,129 @@
+/* FileUpload.css */
+
+.file-upload-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 30px;
+  background: rgba(186, 179, 186, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.file-upload-title {
+  color: #010911;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.file-upload-input {
+  padding: 12px 25px;
+  margin: 20px 0;
+  background: #ffffff;
+  border: 2px solid #3498db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.file-upload-input:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.file-upload-input:active {
+  transform: translateY(0);
+}
+
+.table-container {
+  margin-top: 30px;
+  overflow-x: auto;
+  background-color: #2c3e50;
+}
+
+.table-preview {
+  width: 100%;
+  border-collapse: collapse;
+  background: black;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table-preview th,
+.table-preview td {
+  padding: 12px 15px;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+  font-size: 0.95rem;
+  color: white;
+}
+
+.table-preview th {
+  background-color: #3498db;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.table-preview tr:nth-child(even) {
+  background-color: #020406;
+}
+
+.table-preview tr:hover {
+  background-color: #1782ed;
+  transition: background-color 0.2s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .file-upload-container {
+      margin: 20px;
+      padding: 20px;
+  }
+
+  .file-upload-title {
+      font-size: 1.8rem;
+  }
+
+  .table-preview th,
+  .table-preview td {
+      padding: 10px;
+      font-size: 0.85rem;
+  }
+}
+.submit-button {
+  background-color: #e74c3c;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 15px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  opacity: 0.7;
+}

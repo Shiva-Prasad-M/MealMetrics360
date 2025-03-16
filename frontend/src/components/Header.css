@@ -1,0 +1,79 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px; /* Increased padding */
+  background: rgba(245, 239, 239, 0.2); /* Light transparent background */
+  background: rgba(222, 20, 178, 0.2);
+  backdrop-filter: blur(10px); /* Glassy effect */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+/* Navigation Links */
+.nav-link {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Hover Effect: Highlight & Smooth Scale */
+.nav-link:hover {
+  background: rgba(220, 57, 57, 0.3);
+  color: #f2f7f3;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Light glow effect */
+}
+
+/* Active Link */
+.nav-link.active {
+  color: #e5e9e7; /* Highlight color for active link */
+  font-weight: bold;
+}
+.nav-link.active:hover{
+  color:rgb(23, 11, 22);
+}
+/* Navbar Icons */
+.nav-icon {
+  font-size: 22px;
+
+  margin-left: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+
+}
+
+/* Highlight Navbar Icons on Hover */
+.nav-link:hover .nav-icon {
+  transform: scale(1.2);
+  color: #00FFAB;
+}
+
+/* Keep spacing consistent */
+.navbar .nav-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      padding: 15px;
+  }
+
+  .nav-link {
+      margin: 10px 0;
+  }
+  .nav-link.active:hover{
+    color:rgb(7, 2, 7);
+  }
+}
